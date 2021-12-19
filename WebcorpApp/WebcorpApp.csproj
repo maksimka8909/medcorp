@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Logo.png" />
+    <None Remove="Images\Logo1.png" />
+    <None Remove="Images\Logo2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialMenu" Version="0.0.4.5" />
+    <PackageReference Include="RestSharp" Version="106.15.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Logo.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Logo1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Logo2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="obj\" />
+  </ItemGroup>
+
+</Project>

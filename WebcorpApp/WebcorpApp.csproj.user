@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ShowAllFiles>true</ShowAllFiles>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="AccountantMain.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddOneFieldRecordMain.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AdminMain.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DoctorMain.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="HRMain.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PatientMain.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StorekeeperMain.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AccountantMain.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddOneFieldRecordMain.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AdminMain.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Autorization.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DoctorMain.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="HRMain.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PatientMain.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StorekeeperMain.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

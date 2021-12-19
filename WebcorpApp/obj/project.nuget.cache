@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "5qhYP+Kr7t3ErHcjlhrL9FagKnKWCLyfDmEkuVY+9WG3m+llqO8y2QsCvkIrl8ESvJ+9Cj4rxkRNbiSQ8OypEg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Fobos\\source\\repos\\WebcorpApp\\WebcorpApp\\WebcorpApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Fobos\\.nuget\\packages\\materialmenu\\0.0.4.5\\materialmenu.0.0.4.5.nupkg.sha512",
+    "C:\\Users\\Fobos\\.nuget\\packages\\restsharp\\106.15.0\\restsharp.106.15.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"MaterialMenu 0.0.4.5\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \"net5.0-windows7.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "MaterialMenu",
+      "targetGraphs": [
+        "net5.0-windows7.0"
+      ]
+    }
+  ]
+}
