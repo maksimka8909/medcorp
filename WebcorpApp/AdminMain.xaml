@@ -204,9 +204,9 @@
                 <Image Source="/Images/Logo2.png" Width="100" Height="25" />
             </Button>
             <Separator Background="White"></Separator>
-            <Button FontFamily="Segoe UI Semibold" Foreground="White" FontSize="18">Создать точку отката</Button>
+            <Button FontFamily="Segoe UI Semibold" Foreground="White" FontSize="18" Click="Button_Click">Создать точку отката</Button>
             <Separator Background="White"></Separator>
-            <Button FontFamily="Segoe UI Semibold" Foreground="White" FontSize="18">Применить точку отката</Button>
+            <Button Name="btnExport" FontFamily="Segoe UI Semibold" Foreground="White" FontSize="18" Click="btnExport_Click">Применить точку отката</Button>
         </ToolBar>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
@@ -225,7 +225,7 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Rectangle Grid.Column="0" Grid.RowSpan="5" Fill="#FF73D7AC"/>
-            <DataGrid Name="dgTableInfo" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="4" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" IsReadOnly="True" ColumnWidth="*">
+            <DataGrid Name="dgTableInfo" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="4" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" IsReadOnly="True" ColumnWidth="*" SelectionMode="Single">
                 
             </DataGrid>
             <StackPanel Grid.Row="0" Grid.Column="0" Margin="5,0,5,0" VerticalAlignment="Center">
@@ -265,7 +265,7 @@
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button Name="btnEdit" Grid.Column="5" Content="Изменить" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,5" FontSize="18" FontFamily="Segoe UI Semibold" Foreground="White" BorderBrush="#FF73D7AC" Background="#FF73D7AC">
+            <Button Name="btnEdit" Grid.Column="5" Content="Изменить" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,5" FontSize="18" FontFamily="Segoe UI Semibold" Foreground="White" BorderBrush="#FF73D7AC" Background="#FF73D7AC" Click="btnEdit_Click">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="5"/>
@@ -273,14 +273,14 @@
                 </Button.Resources>
             </Button>
             <StackPanel Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Bottom" Orientation="Horizontal" >
-                <TextBox Width="150" FontSize="18" Margin="5,0,0,5">
+                <TextBox Name="tbSearch" Width="150" FontSize="18" Margin="5,0,0,5">
                     <TextBox.Resources>
                         <Style TargetType="Border">
                             <Setter Property="CornerRadius" Value="5"/>
                         </Style>
                     </TextBox.Resources>
                 </TextBox>
-                <Button Name="btnSearch"  Content="Найти" Margin="5,0,0,5" FontSize="18" FontFamily="Segoe UI Semibold" Foreground="White" BorderBrush="#FF73D7AC" Background="#FF73D7AC">
+                <Button Name="btnSearch"  Content="Найти" Margin="5,0,0,5" FontSize="18" FontFamily="Segoe UI Semibold" Foreground="White" BorderBrush="#FF73D7AC" Background="#FF73D7AC" Click="btnSearch_Click">
                     <Button.Resources>
                         <Style TargetType="Border">
                             <Setter Property="CornerRadius" Value="5"/>

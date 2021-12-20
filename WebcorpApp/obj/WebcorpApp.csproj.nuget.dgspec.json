@@ -51,9 +51,25 @@
               "target": "Package",
               "version": "[0.0.4.5, )"
             },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.27, )"
+            },
+            "MySqlBackup.NET": {
+              "target": "Package",
+              "version": "[2.3.6.1, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
             "RestSharp": {
               "target": "Package",
               "version": "[106.15.0, )"
+            },
+            "Syncfusion.XlsIO.Wpf": {
+              "target": "Package",
+              "version": "[19.4.0.38, )"
             }
           },
           "imports": [

@@ -18,4 +18,14 @@
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)mysqlbackup.net\2.3.6.1\contentFiles\any\net5.0\logo.ico" Condition="Exists('$(NuGetPackageRoot)mysqlbackup.net\2.3.6.1\contentFiles\any\net5.0\logo.ico')">
+      <NuGetPackageId>MySqlBackup.NET</NuGetPackageId>
+      <NuGetPackageVersion>2.3.6.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>logo.ico</Link>
+    </Content>
+  </ItemGroup>
 </Project>

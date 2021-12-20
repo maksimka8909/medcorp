@@ -55,6 +55,17 @@ namespace WebcorpApp
                 }
                 else
                 {
+                    if(response.Data.status == false)
+                    {
+                        string messageBoxText = "Пользователь заблокирован, пожалуйста свяжитесь с админстрацией для уточнения информации";
+                        string caption = "Ошибка";
+                        MessageBoxButton button = MessageBoxButton.OK;
+                        MessageBoxImage icon = MessageBoxImage.Error;
+                        MessageBoxResult result;
+                        result = MessageBox.Show(messageBoxText, caption, button, icon, MessageBoxResult.OK);
+                    }
+                    else
+                    {
                     if (response.Data.role == "Админ")
                     {
                         AdminMain adminMain = new AdminMain();
@@ -101,6 +112,9 @@ namespace WebcorpApp
                         patientMain.Owner = this;
                         patientMain.Show();
                         this.Hide();
+                    }
+
+
                     }
                 }
             }

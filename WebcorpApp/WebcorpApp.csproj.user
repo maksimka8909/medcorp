@@ -15,6 +15,12 @@
     <Compile Update="AddOneFieldRecordMain.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="AddPersonalFile.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddPost.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="AdminMain.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -36,6 +42,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="AddOneFieldRecordMain.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddPersonalFile.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddPost.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="AdminMain.xaml">
