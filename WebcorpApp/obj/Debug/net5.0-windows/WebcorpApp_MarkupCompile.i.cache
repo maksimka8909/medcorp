@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Fobos\source\repos\WebcorpApp\WebcorpApp\obj\Debug\net5.0-windows\
+G:\Work\CSharpProjects\Medcorp\WebcorpApp\obj\Debug\net5.0-windows\
 WebcorpApp
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-C:\Users\Fobos\source\repos\WebcorpApp\WebcorpApp\App.xaml
-8-872993614
+G:\Work\CSharpProjects\Medcorp\WebcorpApp\App.xaml
+13-1295748770
 
-52-1446101227
-1955370416
-AccountantMain.xaml;AddOneFieldRecordMain.xaml;AdminMain.xaml;Autorization.xaml;DoctorMain.xaml;HRMain.xaml;PatientMain.xaml;StorekeeperMain.xaml;
+57-75498519
+195-2026301599
+AccountantMain.xaml;AddOneFieldRecordMain.xaml;AdminMain.xaml;Autorization.xaml;CheckRecordWindow.xaml;DoctorMain.xaml;DrugWindow.xaml;EquipmentWindow.xaml;HRMain.xaml;PatientMain.xaml;StorekeeperMain.xaml;SupplyWindow.xaml;WaybillsWindow.xaml;
 
-True
+False
 

@@ -1,11 +1,16 @@
 ﻿
 
-FC:\Users\Fobos\source\repos\WebcorpApp\WebcorpApp\AccountantMain.xaml;;
-FC:\Users\Fobos\source\repos\WebcorpApp\WebcorpApp\AdminMain.xaml;;
-FC:\Users\Fobos\source\repos\WebcorpApp\WebcorpApp\Autorization.xaml;;
-FC:\Users\Fobos\source\repos\WebcorpApp\WebcorpApp\DoctorMain.xaml;;
-FC:\Users\Fobos\source\repos\WebcorpApp\WebcorpApp\HRMain.xaml;;
-FC:\Users\Fobos\source\repos\WebcorpApp\WebcorpApp\PatientMain.xaml;;
-FC:\Users\Fobos\source\repos\WebcorpApp\WebcorpApp\StorekeeperMain.xaml;;
-FC:\Users\Fobos\source\repos\WebcorpApp\WebcorpApp\AddOneFieldRecordMain.xaml;;
+FG:\Work\CSharpProjects\Medcorp\WebcorpApp\AccountantMain.xaml;;
+FG:\Work\CSharpProjects\Medcorp\WebcorpApp\AddOneFieldRecordMain.xaml;;
+FG:\Work\CSharpProjects\Medcorp\WebcorpApp\AdminMain.xaml;;
+FG:\Work\CSharpProjects\Medcorp\WebcorpApp\Autorization.xaml;;
+FG:\Work\CSharpProjects\Medcorp\WebcorpApp\DoctorMain.xaml;;
+FG:\Work\CSharpProjects\Medcorp\WebcorpApp\DrugWindow.xaml;;
+FG:\Work\CSharpProjects\Medcorp\WebcorpApp\EquipmentWindow.xaml;;
+FG:\Work\CSharpProjects\Medcorp\WebcorpApp\HRMain.xaml;;
+FG:\Work\CSharpProjects\Medcorp\WebcorpApp\PatientMain.xaml;;
+FG:\Work\CSharpProjects\Medcorp\WebcorpApp\StorekeeperMain.xaml;;
+FG:\Work\CSharpProjects\Medcorp\WebcorpApp\SupplyWindow.xaml;;
+FG:\Work\CSharpProjects\Medcorp\WebcorpApp\WaybillsWindow.xaml;;
+FG:\Work\CSharpProjects\Medcorp\WebcorpApp\CheckRecordWindow.xaml;;
 

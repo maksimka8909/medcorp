@@ -9,7 +9,7 @@ namespace WebcorpApp.Classes
 {
     class ApiBuilder
     {
-        private static string rootUrl = "http://localhost:18849/api/";
+        private static string rootUrl = "http://gopher-server.xyz:49154/api/";
         private static RestClient restClient;
 
         public static RestClient GetInstance()

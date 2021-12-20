@@ -19,7 +19,7 @@
             </StackPanel>
             <StackPanel Grid.Row="1" HorizontalAlignment="Center">
                 <TextBlock Text="Наименование" FontSize="18" Foreground="White" FontFamily="Segoe UI Semibold"/>
-                <TextBox Name="tbName" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="30" FontSize="18" Grid.Column="1">
+                <TextBox Name="tbName" HorizontalAlignment="Center" VerticalAlignment="Top" Width="175" Height="30" FontSize="18" Grid.Column="1">
                     <TextBox.Resources>
                         <Style TargetType="Border">
                             <Setter Property="CornerRadius" Value="5"/>

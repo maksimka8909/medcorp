@@ -5,8 +5,62 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WebcorpApp"
         mc:Ignorable="d"
-        Title="Бухгалтер" Height="450" Width="800">
+        Title="Бухгалтер" MinHeight="450" MinWidth="800" Height="450" Width="800" WindowStyle="ThreeDBorderWindow" WindowState="Maximized" Closed="Window_Closed" Loaded="Window_Loaded">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Background="#FF73D7AC" Grid.Row="0" Margin="0 0 0 1">
+            <Image Source="/Images/Logo2.png" HorizontalAlignment="Left" VerticalAlignment="Center" Width="100" Height="25" Margin="10 0 0 0"/>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- боковое меню -->
+            <Grid Background="#FF73D7AC" Grid.Column="0">
+                <ComboBox x:Name="cbContentType" HorizontalAlignment="Center" VerticalAlignment="Top" Width="160" Margin="0 20 0 0" FontFamily="Segoe UI Semibold"
+                          FontSize="18" Visibility="Collapsed"/>
+
+                <StackPanel Grid.Row="5" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="100" Margin="0 0 0 30">
+                    <Button Name="btnExit"  Content="Назад" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="30" FontSize="18" Visibility="Visible"
+                            Background="#FF77D8AF" BorderBrush="White" Foreground="White" FontFamily="Segoe UI Semibold" Click="btnExit_Click">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+
+                    <Button Name="btnClose"  Content="Выход" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="30" FontSize="18" Visibility="Visible"
+                            Background="#FF77D8AF" BorderBrush="White" Foreground="White" FontFamily="Segoe UI Semibold" Margin="0,5,0,0" Click="btnClose_Click">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </StackPanel>
+            </Grid>
+
+            <!-- накладные -->
+            <Grid x:Name="contentWaybills" Grid.Column="1" Visibility="Visible">
+                <DataGrid Name="dgWaybills" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" IsReadOnly="True" SelectionMode="Single">
+                    <DataGrid.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem x:Name="cmWaybillsAdd" Header="Добавить" Click="cmWaybillsAdd_Click"/>
+                        </ContextMenu>
+                    </DataGrid.ContextMenu>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Накладные" Width="*" Binding="{Binding Path=name}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </Grid>
     </Grid>
 </Window>

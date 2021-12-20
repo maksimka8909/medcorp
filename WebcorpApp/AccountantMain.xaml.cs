@@ -23,5 +23,32 @@ namespace WebcorpApp
         {
             InitializeComponent();
         }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            this.Owner.Show();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnClose_Click(object sender, RoutedEventArgs e)
+        {
+            //Application.Current.Shutdown();
+            this.Close();
+        }
+
+        private void cmWaybillsAdd_Click(object sender, RoutedEventArgs e)
+        {
+            this.IsEnabled = false;
+            new WaybillsWindow() { Owner = this }.Show();
+        }
     }
 }

@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "5qhYP+Kr7t3ErHcjlhrL9FagKnKWCLyfDmEkuVY+9WG3m+llqO8y2QsCvkIrl8ESvJ+9Cj4rxkRNbiSQ8OypEg==",
+  "dgSpecHash": "8qLP+VNdWpMUfc+ORTn6ao95y01ocYn06WkMuVu6T/mZqfgQ1sTeeS51luxbpaZCtnsAlR3pamlrEZZdEXVvrw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Fobos\\source\\repos\\WebcorpApp\\WebcorpApp\\WebcorpApp.csproj",
+  "projectFilePath": "G:\\Work\\CSharpProjects\\Medcorp\\WebcorpApp\\WebcorpApp.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Fobos\\.nuget\\packages\\materialmenu\\0.0.4.5\\materialmenu.0.0.4.5.nupkg.sha512",
-    "C:\\Users\\Fobos\\.nuget\\packages\\restsharp\\106.15.0\\restsharp.106.15.0.nupkg.sha512"
+    "C:\\Users\\alexs\\.nuget\\packages\\materialmenu\\0.0.4.5\\materialmenu.0.0.4.5.nupkg.sha512",
+    "C:\\Users\\alexs\\.nuget\\packages\\restsharp\\106.15.0\\restsharp.106.15.0.nupkg.sha512"
   ],
   "logs": [
     {
