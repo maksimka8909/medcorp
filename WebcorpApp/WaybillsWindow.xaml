@@ -1,0 +1,49 @@
+﻿<Window x:Class="WebcorpApp.WaybillsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WebcorpApp"
+        mc:Ignorable="d"
+        Title="Накладная" MinHeight="450" MinWidth="750" Height="450" Width="750" WindowStyle="ThreeDBorderWindow" WindowStartupLocation="CenterScreen" Closed="Window_Closed"  Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Background="#FF73D7AC">
+            <Image Source="/Images/Logo2.png" Height="50"/>
+        </Grid>
+
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Поля для накладной" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Button Name="btnCancel"  Content="Назад" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" FontSize="18" Visibility="Visible"
+                            Background="#FF77D8AF" BorderBrush="White" Foreground="White" FontFamily="Segoe UI Semibold" Click="btnCancel_Click" Grid.Column="0"
+                        Width="100" Margin="5 0">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+                <Button Name="btnConfirm"  Content="Сохранить" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" FontSize="18" Visibility="Visible"
+                            Background="#FF77D8AF" BorderBrush="White" Foreground="White" FontFamily="Segoe UI Semibold" Click="btnConfirm_Click"  Grid.Column="1"
+                        Width="100" Margin="5 0">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>
