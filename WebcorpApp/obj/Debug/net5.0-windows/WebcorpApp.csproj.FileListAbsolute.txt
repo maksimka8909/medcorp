@@ -58,3 +58,13 @@ C:\Users\Fobos\source\repos\WebcorpApp\WebcorpApp\bin\Debug\net5.0-windows\Syncf
 C:\Users\Fobos\source\repos\WebcorpApp\WebcorpApp\obj\Debug\net5.0-windows\Interop.Microsoft.Office.Interop.Excel.dll
 C:\Users\Fobos\source\repos\WebcorpApp\WebcorpApp\obj\Debug\net5.0-windows\WebcorpApp.csproj.ResolveComReference.cache
 C:\Users\Fobos\source\repos\WebcorpApp\WebcorpApp\obj\Debug\net5.0-windows\Interop.Microsoft.Office.Core.dll
+C:\Users\Fobos\source\repos\WebcorpApp\WebcorpApp\obj\Debug\net5.0-windows\CheckRecordWindow.g.cs
+C:\Users\Fobos\source\repos\WebcorpApp\WebcorpApp\obj\Debug\net5.0-windows\DrugWindow.g.cs
+C:\Users\Fobos\source\repos\WebcorpApp\WebcorpApp\obj\Debug\net5.0-windows\EquipmentWindow.g.cs
+C:\Users\Fobos\source\repos\WebcorpApp\WebcorpApp\obj\Debug\net5.0-windows\SupplyWindow.g.cs
+C:\Users\Fobos\source\repos\WebcorpApp\WebcorpApp\obj\Debug\net5.0-windows\WaybillsWindow.g.cs
+C:\Users\Fobos\source\repos\WebcorpApp\WebcorpApp\obj\Debug\net5.0-windows\CheckRecordWindow.baml
+C:\Users\Fobos\source\repos\WebcorpApp\WebcorpApp\obj\Debug\net5.0-windows\DrugWindow.baml
+C:\Users\Fobos\source\repos\WebcorpApp\WebcorpApp\obj\Debug\net5.0-windows\EquipmentWindow.baml
+C:\Users\Fobos\source\repos\WebcorpApp\WebcorpApp\obj\Debug\net5.0-windows\SupplyWindow.baml
+C:\Users\Fobos\source\repos\WebcorpApp\WebcorpApp\obj\Debug\net5.0-windows\WaybillsWindow.baml

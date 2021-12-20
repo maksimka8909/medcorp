@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 C:\Users\Fobos\source\repos\WebcorpApp\WebcorpApp\App.xaml
-10-416942734
+15-839697890
 11124380197
-542023363378
+63-1787508234
 210-1474836641
-AccountantMain.xaml;AddOneFieldRecordMain.xaml;AddPersonalFile.xaml;AddPost.xaml;AdminMain.xaml;Autorization.xaml;DoctorMain.xaml;HRMain.xaml;PatientMain.xaml;StorekeeperMain.xaml;
+AccountantMain.xaml;AddOneFieldRecordMain.xaml;AddPersonalFile.xaml;AddPost.xaml;AdminMain.xaml;Autorization.xaml;CheckRecordWindow.xaml;DoctorMain.xaml;DrugWindow.xaml;EquipmentWindow.xaml;HRMain.xaml;PatientMain.xaml;StorekeeperMain.xaml;SupplyWindow.xaml;WaybillsWindow.xaml;
 
 False
 

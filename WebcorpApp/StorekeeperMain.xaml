@@ -5,8 +5,110 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WebcorpApp"
         mc:Ignorable="d"
-        Title="Кладовщик" Height="450" Width="800">
+        Title="Кладовщик" MinHeight="450" MinWidth="800" Height="450" Width="800" WindowStyle="ThreeDBorderWindow" WindowState="Maximized" Closed="Window_Closed" Loaded="Window_Loaded">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Background="#FF73D7AC" Grid.Row="0" Margin="0 0 0 1">
+            <Image Source="/Images/Logo2.png" HorizontalAlignment="Left" VerticalAlignment="Center" Width="100" Height="25" Margin="10 0 0 0"/>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- боковое меню -->
+            <Grid Background="#FF73D7AC" Grid.Column="0">
+                <ComboBox x:Name="cbContentType" HorizontalAlignment="Center" VerticalAlignment="Top" Width="160" Margin="0 20 0 0" FontFamily="Segoe UI Semibold" FontSize="18" SelectionChanged="cbContentType_SelectionChanged"/>
+
+                <StackPanel Grid.Row="5" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="100" Margin="0 0 0 30">
+                    <Button Name="btnExit"  Content="Назад" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="30" FontSize="18" Visibility="Visible"
+                            Background="#FF77D8AF" BorderBrush="White" Foreground="White" FontFamily="Segoe UI Semibold" Click="btnExit_Click">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+
+                    <Button Name="btnClose"  Content="Выход" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="30" FontSize="18" Visibility="Visible"
+                            Background="#FF77D8AF" BorderBrush="White" Foreground="White" FontFamily="Segoe UI Semibold" Margin="0,5,0,0" Click="btnClose_Click">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </StackPanel>
+            </Grid>
+
+            <!-- оборудование -->
+            <Grid x:Name="contentInventory" Grid.Column="1" Visibility="Visible">
+                <DataGrid Name="dgEquipments" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" IsReadOnly="True" SelectionMode="Single"
+                          SelectionChanged="dgEquipments_SelectionChanged">
+                    <DataGrid.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem x:Name="cmEquipmentAdd" Header="Добавить" Click="cmEquipmentAdd_Click"/>
+                            <MenuItem x:Name="cmEquipmentChange" Header="Изменить" IsEnabled="False" Click="cmEquipmentChange_Click"/>
+                            <MenuItem x:Name="cmEquipmentDelete" Header="Удалить" IsEnabled="False" Click="cmEquipmentDelete_Click"/>
+                            <MenuItem x:Name="cmEquipmentRefresh" Header="Обновить" IsEnabled="True" Click="cmRefresh_Click" />
+                        </ContextMenu>
+                    </DataGrid.ContextMenu>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Оборудование" Width="*" Binding="{Binding Path=name}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+
+            <!-- препарат -->
+            <Grid x:Name="contentDrug" Grid.Column="1" Visibility="Collapsed">
+                <DataGrid Name="dgDrugs" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" IsReadOnly="True" SelectionMode="Single" SelectionChanged="dgDrugs_SelectionChanged">
+                    <DataGrid.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem x:Name="cmDrugAdd" Header="Добавить" Click="cmDrugAdd_Click"/>
+                            <MenuItem x:Name="cmDrugChange" Header="Изменить" IsEnabled="False" Click="cmDrugChange_Click"/>
+                            <MenuItem x:Name="cmDrugDelete" Header="Удалить" IsEnabled="False" Click="cmDrugDelete_Click"/>
+                            <MenuItem x:Name="cmDrugRefresh" Header="Обновить" IsEnabled="True" Click="cmRefresh_Click" />
+                        </ContextMenu>
+                    </DataGrid.ContextMenu>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Препараты" Width="*" Binding="{Binding Path=name}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+
+            <!-- поставки -->
+            <Grid x:Name="contentSupply" Grid.Column="1" Visibility="Collapsed">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Orientation="Horizontal" Grid.Row="0" HorizontalAlignment="Right" Margin="0 0 15 0">
+                    <TextBlock Text="Дата поставки:" VerticalAlignment="Center" FontFamily="Segoe UI Semibold" FontSize="18"/>
+                    <DatePicker Name="dpDateSupply" Margin="10 0 0 0" Width="160" TextBlock.FontFamily="Segoe UI Semibold" TextBlock.FontSize="18"/>
+                </StackPanel>
+
+                <DataGrid Name="dgSupply" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" IsReadOnly="True" SelectionMode="Single" Grid.Row="1"
+                          TextBlock.FontFamily="Segoe UI Semibold" SelectionChanged="dgSupply_SelectionChanged">
+                    <DataGrid.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem x:Name="cmSupplyAdd" Header="Добавить" Click="cmSupplyAdd_Click"/>
+                            <MenuItem x:Name="cmSupplyDelete" IsEnabled="False" Header="Удалить" Click="cmSupplyDelete_Click"/>
+                            <MenuItem x:Name="cmSupplyExcel" Header="Отчет excel" Click="cmSupplyExcel_Click"/>
+                            <MenuItem x:Name="cmSupplyRefresh" Header="Обновить" IsEnabled="True" Click="cmRefresh_Click" />
+                        </ContextMenu>
+                    </DataGrid.ContextMenu>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Поставки" Width="*" Binding="{Binding Path=name}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </Grid>
     </Grid>
 </Window>
